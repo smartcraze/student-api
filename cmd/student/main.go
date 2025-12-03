@@ -24,6 +24,7 @@ func main() {
 	router.HandleFunc("GET /", func(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte("Welcome to student api"))
 	})
+	router.HandleFunc("POST /api/student/create")
 
 	// setup server
 
