@@ -48,6 +48,7 @@ func main() {
 	})
 
 	router.HandleFunc("POST /api/student/create", httphandler.CreateStudentHandler(db))
+	router.HandleFunc("GET /api/student/{id}", httphandler.GetStudentHandler(db))
 
 	// setup server
 
